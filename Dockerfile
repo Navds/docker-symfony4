@@ -17,7 +17,6 @@ RUN docker-php-ext-configure gd \
     && docker-php-ext-install bcmath 
 
 RUN pecl install mongodb amqp \
-    && docker-php-ext-install mongodb \
     && docker-php-ext-enable amqp \
     && echo "extension=mongodb.so" > /usr/local/etc/php/conf.d/ext-mongodb.ini
 

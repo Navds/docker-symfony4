@@ -4,7 +4,7 @@ MAINTAINER Navalona Ramanantoanina <job.navds@gmail.com>
 RUN apt-get update \
     && apt-get install -y librabbitmq-dev curl software-properties-common \
         libfreetype6-dev libjpeg62-turbo-dev libssl-dev libicu-dev \
-        libcurl4-openssl-dev libzip-dev libmcrypt-dev git openssl zip
+        libcurl4-openssl-dev libzip-dev libbz2-dev libmcrypt-dev git openssl zip 
 
 RUN docker-php-ext-configure gd \
         --with-freetype-dir=/usr/include/ \
